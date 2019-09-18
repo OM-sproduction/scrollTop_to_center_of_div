@@ -1,0 +1,8 @@
+var $window = $(window),
+    $element = $('.my-element'),
+    elementTop = $element.offset().top,
+    elementHeight = $element.height(),
+    viewportHeight = $window.height(),
+    scrollIt = elementTop - ((viewportHeight - elementHeight) / 2);
+
+    $window.scrollTop(scrollIt);
